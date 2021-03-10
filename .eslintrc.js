@@ -15,5 +15,6 @@ module.exports = {
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
         'comma-dangle': ['error', 'always-multiline'],
+        'prettier/prettier': 'error',
     },
 };
