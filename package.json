@@ -10,7 +10,7 @@
   "scripts": {
     "start": "ts-node src",
     "lint": "npm run lint:prettier && npm run lint:eslint",
-    "lint:prettier": "npx prettier -c \"src/**/*.{json,ts}\"",
+    "lint:prettier": "prettier -c \"src/**/*.{json,ts}\"",
     "lint:eslint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
