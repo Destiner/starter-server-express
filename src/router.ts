@@ -1,3 +1,3 @@
 export function ok(_req: any, res: any): void {
-	res.send('OK');
+  res.send('OK');
 }
