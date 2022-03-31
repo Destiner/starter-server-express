@@ -3,6 +3,7 @@
     "module": "ES5",
     "target": "ES2022",
     "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
