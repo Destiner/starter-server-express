@@ -1,12 +1,14 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
+import { config } from 'dotenv';
 import express from 'express';
+
+import ok from './router';
+
+config();
+
 const app = express();
 
-import { ok } from './router';
-
 // CORS
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 app.use((_req: any, res: any, next: any) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
@@ -25,7 +27,8 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}.`);
 });
 
-function errorHandler(err: any, _req: any, res: any, next: any) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function errorHandler(err: any, _req: any, res: any, next: any): void {
   res.status(400).end();
   next(err);
 }
