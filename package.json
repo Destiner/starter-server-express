@@ -7,8 +7,9 @@
     "type": "git",
     "url": "git://github.com/Destiner/server-starter.git"
   },
+  "type": "module",
   "scripts": {
-    "start": "ts-node src",
+    "start": "ts-node --esm src",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:prettier": "prettier -c \"src/**/*.{json,ts}\"",
     "lint:eslint": "eslint \"src/**/*.ts\""
