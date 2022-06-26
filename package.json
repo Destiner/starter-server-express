@@ -17,7 +17,8 @@
     "start": "ts-node --esm src",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:prettier": "prettier -c \"src/**/*.{json,ts}\"",
-    "lint:eslint": "eslint \"src/**/*.ts\""
+    "lint:eslint": "eslint \"src/**/*.ts\"",
+    "typecheck": "npx tsc --noEmit"
   },
   "dependencies": {
     "dotenv": "16.0.1",
