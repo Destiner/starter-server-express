@@ -1,9 +1,7 @@
-import { config } from 'dotenv';
+import 'dotenv/config';
 import express from 'express';
 
 import ok from './router';
-
-config();
 
 const app = express();
 
