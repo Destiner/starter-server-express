@@ -24,8 +24,12 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}.`);
 });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function errorHandler(err: any, _req: any, res: any, next: any): void {
+function errorHandler(
+  err: Error,
+  _req: Request,
+  res: Response,
+  next: (error: Error) => void,
+): void {
   res.status(400).end();
   next(err);
 }
