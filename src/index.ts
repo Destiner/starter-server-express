@@ -1,13 +1,12 @@
 import 'dotenv/config';
-import express from 'express';
+import express, { Request, Response } from 'express';
 
 import ok from './router';
 
 const app = express();
 
 // CORS
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-app.use((_req: any, res: any, next: any) => {
+app.use((_req: Request, res: Response, next: () => void) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
