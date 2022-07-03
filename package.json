@@ -14,7 +14,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "ts-node --esm src",
+    "serve": "ts-node --esm src",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:prettier": "prettier -c \"src/**/*.{json,ts}\"",
     "lint:eslint": "eslint \"src/**/*.ts\"",
