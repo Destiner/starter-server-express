@@ -2,7 +2,7 @@ import 'dotenv/config';
 import type { Request, Response } from 'express';
 import express from 'express';
 
-import ok from './router';
+import ok from './router.js';
 
 const app = express();
 
